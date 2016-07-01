@@ -37,7 +37,7 @@ public class Read {
     @Benchmark
     public int step8() {
         int ret = 0;
-        for (int i = 0, n = bytes.length; i < n; i += 1) {
+        for (int i = 0, n = bytes.length; i < n; i += 8) {
             ret += bytes[i];
         }
         return ret;
