@@ -35,42 +35,42 @@ public class Operators {
     double d = 98765.4321;
 
     @Benchmark
-    public int intNone() {
-        return a;
+    public void intNone() {
+         a = b;
     }
 
     @Benchmark
-    public double doubleNone() {
-        return c;
+    public void doubleNone() {
+        c = d;
     }
 
     @Benchmark
-    public int intAdd() {
-        return a + b;
+    public void intAdd() {
+        a += b;
     }
 
     @Benchmark
-    public int intMul() {
-        return a * b;
+    public void intMul() {
+        a *= b;
     }
 
     @Benchmark
-    public int intDiv() {
-        return a / b;
+    public void intDiv() {
+        a /= b;
     }
 
     @Benchmark
-    public double doubleAdd() {
-        return c + d;
+    public void doubleAdd() {
+        c += d;
     }
 
     @Benchmark
-    public double doubleMul() {
-        return c * d;
+    public void doubleMul() {
+        c *= d;
     }
 
     @Benchmark
-    public double doubleDiv() {
-        return c / d;
+    public void doubleDiv() {
+        c /= d;
     }
 }
